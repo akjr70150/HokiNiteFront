@@ -166,7 +166,30 @@ body {
     border: 0;
     margin: 1em 0;
     padding: 0;
+}
 
+div.a {
+    width: 50px;
+    height:50px;
+
+    position:fixed;
+
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.a {
+    animation-name:            rotate;
+    animation-duration:        10.0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 
