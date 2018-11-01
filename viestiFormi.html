@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TEsti</title>
+    <title>ViestiFormi</title>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -15,21 +15,23 @@
 <div class="modal-body" id="modaali">
     <div class="panel panel-default">
         <div class="panel-body">
+                <form>
             <div class="row">
                 <div class="text-left col-xs-2">Viesti:</div>
-                <textarea class="form-control" rows="10" id="viesti"></textarea>
+                <textarea class="form-control" rows="10" id="sisalto"></textarea>
             </div>
             </form>
         </div>
     </div>
+
     <div class="modal-footer">
         <div class="panel-footer">
-            <input type="button" value="Lähetä" id="empbutton" onclick="laheta()"/>
+            <div class="lahetaNappi"><input type="button" class="nappiItse" value="Lähetä" id="empbutton" onclick="lahetaViesti(); location.href = 'kalpaviestit.html';"/></div>
             <div class="col-xs-10" id="lblstatus"></div>
         </div>
     </div>
 </div>
 
-<script src="default.js"></script>
+<script src="Kalpadefault.js"></script>
 </body>
 </html>

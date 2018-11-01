@@ -1,25 +1,48 @@
-var kalpatopictaulukko = [];
-var kalpablaa = document.createElement("div");
-kalpablaa.innerText = kalpatopictaulukko;
-kalpablaa.classList.add("grid-item");
-var optiot = {day: '2-digit', month: '2-digit', year: '2-digit',  hour: '2-digit', minute: '2-digit', hour12: false};
+
+function lahetaViesti(){
+    event.preventDefault();
+    var data = JSON.stringify({
+        "id": increment(),
+        "content": $("#sisalto").val(),
+        "creationdate": "2018-11-02T11:15:34.183+0000",
+        "users1": {
+            "id": 10,
+            "username": "kiekkomiäs",
+            "handler": {},
+            "hibernateLazyInitializer": {}
+        },
+        "topics":{
+            "id": 1,
+            "title": "Kalpa",
+            "content": "Kuopion jengi",
+            "creationdate": "2018-11-12T11:49:13.038+0000",
+            "handler": {},
+            "hibernateLazyInitializer": {}
+        }
+
+    });
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "http://localhost:8080/luouusiviesti",
+        "method": "POST",
+        "headers": {
+            "Content-Type": "application/json",
+            "cache-control": "no-cache",
+            "Postman-Token": "5946dfd7-1512-4fe9-80ca-fa6fe7047999"
+        },
+        "processData": false,
+        "data": data
+    };
+
+    $.ajax(settings).done(function (response) {
+        console.log(response);
+    })}
 
 
-haeTopicit();
+var id = 100;
+function increment(){
 
-function haeTopicit() {
-    $.getJSON('http://localhost:8080/viestit')
-        .done(function (data) {
-            console.log(data);
-            var kalpatopicit = document.getElementById("kalpatopicit");
-            for (var l = 0; l < data.length; l++) {
-                if (data[l].topics.title === "Kalpa") {
-                    if (data[l].topics.id === 1) {
-                        console.log(data[0].topics.content);
-                        kalpatopictaulukko.push(data[l].topics.content);
-                        kalpatopicit.innerHTML += (data[l].topics.content);
-                    }
-                }
-            }
-        });
+    id++;
+    return id;
 }

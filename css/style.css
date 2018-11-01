@@ -208,6 +208,49 @@ div.a {
 
 }
 
+#modaali {
+    background-color: black;
+}
+
+.modal-body {
+    background-color: #FF6A00;
+}
+
+.modal-content {
+    background-color: #FF6A00;
+}
+
+.modal-footer {
+    background-color: #FF6A00;
+}
+
+.modal-header {
+    background-color: #FF6A00;
+    font-weight: bold;
+    color: black;
+}
+
+.text-left {
+    font-weight: bold;
+    color: black;
+}
+
+.modal-dialog {
+    background-color: #FF6A00;
+}
+
+.lahetaNappi {
+    height: 28px;
+    text-align: center;
+    background-color: #FF6A00;
+    border-radius: 3px;
+    border: 2px solid black;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    margin: auto;
+}
+
 #kalpa {
     color: #FF6A00;
     font-size: larger;

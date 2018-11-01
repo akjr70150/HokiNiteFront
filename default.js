@@ -60,39 +60,40 @@ function haeViestit() {
 
         })
 }
-//
-// function laheta() {
-//     var data = JSON.stringify({
-//         "id": 12,
-//         "title": $("#otsikko").val(),
-//         "content": $("#viesti").val(),
-//         "creationdate": "2018-10-31T11:49:13.038+0000"
-//
-//     });
-//     console.log(data);
-//     var settings = {
-//         "async": true,
-//         "crossDomain": true,
-//         "url": "http://localhost:8080/luouusitopic/",
-//         "method": "POST",
-//         "headers": {
-//             "Content-Type": "application/json",
-//             "cache-control": "no-cache"
-//
-//         },
-//         "processData": false,
-//         "data": data
-//     }
-// //"{\"id\": 4,\n \"title\": \"Jukurit\",\n\"content\": \"Ei oo Jokerit\",\n\"creationdate\": \"2018-10-31T11:49:13.038+0000\"\n}"
-//     $.ajax(settings).done(function (response) {
-//         console.log(response);
-//         if (response) {
-//             alert("Moi")
-//         } else {
-//             alert("Täytä kaikki kentät!");
-//         }
-//
-//
-//     });
+
+
+function turha() {
+    var data = JSON.stringify({
+        "id": 12,
+        "title": $("#otsikko").val(),
+        "content": $("#viesti").val(),
+        "creationdate": "2018-10-31T11:49:13.038+0000"
+
+    });
+    console.log(data);
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "http://localhost:8080/luouusitopic/",
+        "method": "POST",
+        "headers": {
+            "Content-Type": "application/json",
+            "cache-control": "no-cache"
+
+        },
+        "processData": false,
+        "data": data
+    }
+//"{\"id\": 4,\n \"title\": \"Jukurit\",\n\"content\": \"Ei oo Jokerit\",\n\"creationdate\": \"2018-10-31T11:49:13.038+0000\"\n}"
+    $.ajax(settings).done(function (response) {
+        console.log(response);
+        if (response) {
+            alert("Moi")
+        } else {
+            alert("Täytä kaikki kentät!");
+        }
+
+
+    });
 
 }
