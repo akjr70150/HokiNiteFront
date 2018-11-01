@@ -2,29 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HokiNite</title>
+    <title>Kalpa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="popup.js"></script>
-    <link href="./css/style.css" rel="stylesheet" type="text/css" />
-
+    <link href="./css/style.css" rel="stylesheet" />
 </head>
 <body>
-
-
-
-<div id="thover"></div>
-
-<div id="tpopup">
-    <img src="./images/jutirillaa2.png">
-
-    <div id="tclose">X</div>
-</div>
-
-
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -41,7 +27,6 @@
                 <li><a href="liiga.html">Liiga</a></li>
                 <li><a href="nhl.html">NHL</a></li>
                 <li><a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D0%B1%D0%B8%D1%80%D1%8C">Jokerit</a></li>
-
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#"><span class="glyphicon glyphicon-user"></span> Rekisteröidy</a></li>
@@ -52,26 +37,16 @@
 </nav>
 <div class="row">
     <div class="column left">
+        <button type="button" class="luoKeskustelu">Luo keskustelu</button>
+        <h2 class="joukkueNimi">Kalpa</h2>
+        <br><br><br>
+        <hr/>
         <div class="kolumnitkolumnissa">
-            <div class="kk">
-                <a href="liiga.html" class="liiga"> <img src="./images/liiga.png">Liiga</a>
-            </div>
-            <br>
-            <div class="kk">
-            <a href="nhl.html" class="liiga"> <img src="./images/nhl.png">NHL</a>
-            </div>
-            <br>
-            <div class="kk">
-                <a href="http://mestis.fi/" class="liiga"> <img src="./images/mestis.png">Mestis</a>
-            </div>
-            <br>
-            <div class="kk">
-                <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D0%B1%D0%B8%D1%80%D1%8C" class="liiga"> <img src="./images/jokerit.png">Jokerit</a>
-            </div>
+            <a href="kalpaviestit.html"><div id ="kalpaviestikenttä"></div></a>
         </div>
-        <br> <br>
-        <div class='a'><img src="./images/jutinpaa.png"></div>
     </div>
+
+
     <div class="column right">
         <div align="right" id="nhltwiitit">
             <a class="twitter-timeline" data-lang="fi" data-width="350" data-height="350" data-theme="dark" data-link-color="#FF6A00"
@@ -79,17 +54,13 @@
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
         <div align="right" id="liigatwiitit">
-            <a class="twitter-timeline" data-lang="fi" data-width="350" data-height="350" data-theme="dark" data-link-color="#FF6A00"
+            <a class="twitter-timeline" data-width="350" data-height="350" data-theme="dark" data-link-color="#FF6A00"
                href="https://twitter.com/smliiga?ref_src=twsrc%5Etfw" data-chrome="nofooter noborders transparent noscrollbar"></a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
     </div>
 </div>
-
-<footer class="footer">
-    <div class="container">© HokiBoi_86
-    </div>
-</footer>
+<div id="kalpaviestit"></div>
 <script src="default.js"></script>
 </body>
 </html>
