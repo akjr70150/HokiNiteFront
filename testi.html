@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TEsti</title>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">X</button>
+    <h1>Uusi keskustelu</h1>
+</div>
+<div class="modal-body">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="row">
+                <form>
+                <div class="text-right col-xs-2">Otsikko:</div>
+                <textarea class="form-control" rows="1" id="otsikko"></textarea>
+
+            </div>
+            <div class="row">
+                <div class="text-left col-xs-2">Viesti:</div>
+                <textarea class="form-control" rows="10" id="viesti"></textarea>
+            </div>
+            </form>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="panel-footer">
+            <input type="button" value="Lähetä" id="empbutton" onclick="laheta()"/>
+            <div class="col-xs-10" id="lblstatus"></div>
+        </div>
+    </div>
+</div>
+
+<script src="default.js"></script>
+</body>
+</html>
