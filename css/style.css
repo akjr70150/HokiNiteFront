@@ -192,4 +192,20 @@ div.a {
     animation-timing-function: linear;
 }
 
+.disclaimer {
+    color: #FF6A00;
+}
+
+.agreeButton {
+    height: 28px;
+    text-align: center;
+    background-color: #FF6A00;
+    border-radius: 3px;
+    border: 2px solid black;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+
+}
+
 
