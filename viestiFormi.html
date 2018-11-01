@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TEsti</title>
+    <title>ViestiFormi</title>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -17,20 +17,22 @@
         <div class="panel-body">
             <div class="row">
                 <form>
-                <div class="text-right col-xs-2">Otsikko:</div>
+                <div class="text-left col-xs-2">Otsikko:</div>
                 <textarea class="form-control" rows="1" id="otsikko"></textarea>
 
             </div>
             <div class="row">
+
                 <div class="text-left col-xs-2">Viesti:</div>
                 <textarea class="form-control" rows="10" id="viesti"></textarea>
             </div>
             </form>
         </div>
     </div>
+
     <div class="modal-footer">
         <div class="panel-footer">
-            <input type="button" value="Lähetä" id="empbutton" onclick="laheta()"/>
+            <div class="lahetaNappi"><input type="button" class="nappiItse" value="Lähetä" id="empbutton" onclick="laheta(); location.href = 'hifk.html';"/></div>
             <div class="col-xs-10" id="lblstatus"></div>
         </div>
     </div>
